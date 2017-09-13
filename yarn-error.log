@@ -1,0 +1,53 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/0.27.5_1/libexec/bin/yarn.js
+
+PATH: 
+  /Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Library/Frameworks/Python.framework/Versions/2.7/bin
+
+Yarn version: 
+  0.27.5
+
+Node version: 
+  6.11.2
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+      "name": "example-typescript",
+      "version": "1.0.0",
+      "description": "a typescript example",
+      "author": "",
+      "license": "MIT",
+      "scripts": {
+        "tsc": "tsc",
+        "pretest": "npm run tsc",
+        "test": "protractor conf.js",
+        "debug": "node --inspect --debug-brk ./node_modules/.bin/protractor asyncAwait/conf.js"
+      },
+      "dependencies": {
+        "@types/jasmine": "2.5.41",
+        "@types/jasminewd2": "^2.0.0",
+        "jasmine": "^2.4.1",
+        "protractor": "file:../",
+        "typescript": "~2.0.0"
+      },
+      "devDependencies": {
+        "@types/jasminewd2": "^2.0.0",
+        "ts-node": "^3.0.2"
+      }
+    }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: unsure how to copy this: /Users/pavelshermayster/Library/Application Support/Code/1.14.2-shared.sock
+      at /usr/local/Cellar/yarn/0.27.5_1/libexec/lib/yarn-cli.js:349:17
+      at throw (native)
+      at step (/usr/local/Cellar/yarn/0.27.5_1/libexec/lib/yarn-cli.js:91:30)
+      at /usr/local/Cellar/yarn/0.27.5_1/libexec/lib/yarn-cli.js:104:13
